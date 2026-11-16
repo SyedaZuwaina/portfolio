@@ -33,7 +33,8 @@ tailwind.config = { theme: { extend: {
   .stat{font-family:'Instrument Serif',serif;font-size:2.25rem;line-height:1;color:#fff}
   .gap{margin-top:.6rem;font-size:.875rem;color:#cbd5e1}
   .gap b{color:#2dd4bf}
-  .shot{height:84px;border:1px dashed #334766;border-radius:.6rem;margin-bottom:.9rem;display:flex;align-items:center;justify-content:center;font:400 .7rem 'JetBrains Mono',monospace;color:#64748b;background:repeating-linear-gradient(135deg,transparent 0 10px,rgba(148,163,184,.05) 10px 11px)}
+  .shot{height:140px;border:1px solid #223049;border-radius:.6rem;margin-bottom:.9rem;overflow:hidden;background:#0b1220;display:flex;align-items:center;justify-content:center}
+  .shot img{max-width:100%;max-height:100%;object-fit:contain;object-position:center;display:block}
   .insight{border-left:2px solid #2dd4bf;padding-left:1.25rem;font-family:'Instrument Serif',serif;font-size:1.65rem;line-height:1.3;color:#f1f5f9;font-style:italic}
   .flow{display:grid;gap:1.1rem}
   @media(min-width:768px){.flow{grid-template-columns:repeat(3,1fr)}.flow>.card{position:relative}.flow>.card:not(:last-child)::after{content:"→";position:absolute;right:-1.05rem;top:50%;transform:translateY(-50%);color:#2dd4bf;font-size:1.1rem;z-index:2}}
@@ -118,15 +119,27 @@ tailwind.config = { theme: { extend: {
       </div>
     </div>
 
-    <div class="mod">
+<div class="mod">
       <div class="lbl">Competitor landscape and the gap</div>
       <div class="grid gap-4 md:grid-cols-3">
-        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">MyFitnessPal / macro trackers</h3><p class="small mt-1">Great at long-term calorie logging.</p>
-          <p class="gap"><b>The gap:</b> adds cognitive stress when you feel unwell. 91.3% say macro counting is irrelevant or stressful then (21/23).</p></div>
-        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">Google Search / wellness blogs</h3><p class="small mt-1">Comprehensive information.</p>
-          <p class="gap"><b>The gap:</b> high reading friction and contradictory advice, with no real-time body context.</p></div>
-        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">Generic ChatGPT prompts</h3><p class="small mt-1">Fast conversational answers.</p>
-          <p class="gap"><b>The gap:</b> black-box “trust me” output with no deterministic guardrails or ingredient boundaries by default.</p></div>
+        <div class="card">
+          <div class="shot"><img src="images/mfp.png" alt="MyFitnessPal macro tracking screen" class="h-full w-full object-cover object-top"></div>
+          <h3 class="font-medium text-white">MyFitnessPal / macro trackers</h3>
+          <p class="small mt-1">Great at long-term calorie logging.</p>
+          <p class="gap"><b>The gap:</b> adds cognitive stress when you feel unwell. 91.3% say macro counting is irrelevant or stressful then (21/23).</p>
+        </div>
+        <div class="card">
+          <div class="shot"><img src="images/google-health.png" alt="Google Search bloating results" class="h-full w-full object-cover object-top"></div>
+          <h3 class="font-medium text-white">Google Search / wellness blogs</h3>
+          <p class="small mt-1">Comprehensive information.</p>
+          <p class="gap"><b>The gap:</b> high reading friction and contradictory advice, with no real-time body context.</p>
+        </div>
+        <div class="card">
+          <div class="shot"><img src="images/chatgpt-meal.png" alt="ChatGPT generic meal prompt response" class="h-full w-full object-cover object-top"></div>
+          <h3 class="font-medium text-white">Generic ChatGPT prompts</h3>
+          <p class="small mt-1">Fast conversational answers.</p>
+          <p class="gap"><b>The gap:</b> black-box “trust me” output with no deterministic guardrails or ingredient boundaries by default.</p>
+        </div>
       </div>
     </div>
 
@@ -182,15 +195,27 @@ tailwind.config = { theme: { extend: {
       </div>
     </div>
 
-    <div class="mod">
+<div class="mod">
       <div class="lbl">Competitor landscape and the gap</div>
       <div class="grid gap-4 md:grid-cols-3">
-        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">Apple / Android clock alarms</h3><p class="small mt-1">Reliable countdown.</p>
-          <p class="gap"><b>The gap:</b> no clinical context, no 4-hour supplement reminder, and zero adherence history for doctor visits.</p></div>
-        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">Medisafe / pill reminder apps</h3><p class="small mt-1">Strong multi-medication scheduling.</p>
-          <p class="gap"><b>The gap:</b> built for “Did you take it?”, not “How long until I can eat?”, and heavier than a one-tap launcher.</p></div>
-        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">Paper / notes-app logs</h3><p class="small mt-1">Flexible journaling.</p>
-          <p class="gap"><b>The gap:</b> too much friction when half asleep, so tracking is abandoned before the endocrinology appointment.</p></div>
+        <div class="card">
+          <div class="shot"><img src="images/clock-alarm.png" alt="Standard clock timer app" class="h-full w-full object-cover object-top"></div>
+          <h3 class="font-medium text-white">Apple / Android clock alarms</h3>
+          <p class="small mt-1">Reliable countdown.</p>
+          <p class="gap"><b>The gap:</b> no clinical context, no 4-hour supplement reminder, and zero adherence history for doctor visits.</p>
+        </div>
+        <div class="card">
+          <div class="shot"><img src="images/medisafe.jpg" alt="Medisafe multi-pill schedule" class="h-full w-full object-cover object-top"></div>
+          <h3 class="font-medium text-white">Medisafe / pill reminder apps</h3>
+          <p class="small mt-1">Strong multi-medication scheduling.</p>
+          <p class="gap"><b>The gap:</b> built for “Did you take it?”, not “How long until I can eat?”, and heavier than a one-tap launcher.</p>
+        </div>
+        <div class="card">
+          <div class="shot"><img src="images/notes-log.jpg" alt="Messy morning notes log" class="h-full w-full object-cover object-top"></div>
+          <h3 class="font-medium text-white">Paper / notes-app logs</h3>
+          <p class="small mt-1">Flexible journaling.</p>
+          <p class="gap"><b>The gap:</b> too much friction when half asleep, so tracking is abandoned before the endocrinology appointment.</p>
+        </div>
       </div>
     </div>
 
