@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Syeda Zuwaina | Technical AI Product Manager</title>
-<meta name="description" content="Syeda Zuwaina is a Technical AI Product Manager and former Infosys Systems Engineer. Technology with empathy. Products with purpose.">
+<meta name="description" content="Technical AI Product Manager. Ex-Infosys engineer shipping safety-first AI products from user discovery to production: BioSync and ThyroHour.">
 <meta name="theme-color" content="#0b1220">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,41 +12,50 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: {
-        display: ['"Instrument Serif"', 'Georgia', 'serif'],
-        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
-      },
-      colors: { ink: '#0b1220', panel: '#111a2b', line: '#223049', accent: '#2dd4bf' },
-    },
-  },
-};
+tailwind.config = { theme: { extend: {
+  fontFamily: { display: ['"Instrument Serif"','Georgia','serif'], sans: ['"Plus Jakarta Sans"','system-ui','sans-serif'], mono: ['"JetBrains Mono"','ui-monospace','monospace'] },
+  colors: { ink:'#0b1220', panel:'#111a2b', line:'#223049', accent:'#2dd4bf' } } } };
 </script>
 <style>
-  body { background: #0b1220; }
-  ::selection { background: #2dd4bf; color: #0b1220; }
-  a:focus-visible, button:focus-visible { outline: 2px solid #2dd4bf; outline-offset: 3px; border-radius: 6px; }
-  .glow { background: radial-gradient(60% 50% at 80% 0%, rgba(45,212,191,.10), transparent 70%); }
-  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-  .rise { animation: rise .8s cubic-bezier(.2,.7,.2,1) both; }
-  .rise-2 { animation-delay: .12s; } .rise-3 { animation-delay: .24s; }
-  @media (prefers-reduced-motion: reduce) { .rise { animation: none; } html { scroll-behavior: auto; } }
+  body{background:#0b1220}
+  ::selection{background:#2dd4bf;color:#0b1220}
+  a:focus-visible{outline:2px solid #2dd4bf;outline-offset:3px;border-radius:6px}
+  .glow{background:radial-gradient(60% 50% at 80% 0%,rgba(45,212,191,.10),transparent 70%)}
+  .btn{display:inline-block;border-radius:.6rem;padding:.7rem 1.1rem;font-size:.875rem;font-weight:500;color:#fff;border:1px solid #223049;transition:.2s}
+  .btn:hover{border-color:#2dd4bf;color:#2dd4bf}
+  .btn.p{background:#2dd4bf;color:#0b1220;font-weight:600;border-color:#2dd4bf}
+  .btn.p:hover{background:#5eead4;color:#0b1220}
+  .card{background:#111a2b;border:1px solid #223049;border-radius:1rem;padding:1.25rem;transition:border-color .2s,transform .2s}
+  .card:hover{border-color:rgba(45,212,191,.55);transform:translateY(-2px)}
+  .lbl{font-size:.8rem;font-weight:600;color:#2dd4bf;margin-bottom:.6rem}
+  .mod{margin-top:2.75rem}
+  .tag{display:inline-block;border-radius:999px;background:rgba(45,212,191,.1);color:#2dd4bf;padding:.2rem .7rem;font-size:.75rem}
+  .stat{font-family:'Instrument Serif',serif;font-size:2.25rem;line-height:1;color:#fff}
+  .gap{margin-top:.6rem;font-size:.875rem;color:#cbd5e1}
+  .gap b{color:#2dd4bf}
+  .shot{height:84px;border:1px dashed #334766;border-radius:.6rem;margin-bottom:.9rem;display:flex;align-items:center;justify-content:center;font:400 .7rem 'JetBrains Mono',monospace;color:#64748b;background:repeating-linear-gradient(135deg,transparent 0 10px,rgba(148,163,184,.05) 10px 11px)}
+  .insight{border-left:2px solid #2dd4bf;padding-left:1.25rem;font-family:'Instrument Serif',serif;font-size:1.65rem;line-height:1.3;color:#f1f5f9;font-style:italic}
+  .flow{display:grid;gap:1.1rem}
+  @media(min-width:768px){.flow{grid-template-columns:repeat(3,1fr)}.flow>.card{position:relative}.flow>.card:not(:last-child)::after{content:"→";position:absolute;right:-1.05rem;top:50%;transform:translateY(-50%);color:#2dd4bf;font-size:1.1rem;z-index:2}}
+  .step{border-top:3px solid #2dd4bf}
+  code{font-family:'JetBrains Mono',monospace;font-size:.78em;color:#99f6e4;background:rgba(45,212,191,.08);padding:.05rem .3rem;border-radius:.3rem}
+  .small{font-size:.875rem;color:#94a3b8}
+  .tl{display:grid;gap:1rem}
+  @media(min-width:768px){.tl{grid-template-columns:repeat(4,1fr)}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}.card:hover{transform:none}}
 </style>
 </head>
 <body class="font-sans text-slate-300 antialiased leading-relaxed">
 
-<!-- NAV -->
 <header class="sticky top-0 z-20 border-b border-line/70 bg-ink/85 backdrop-blur">
   <nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 text-sm">
     <a href="#top" class="font-display text-xl text-white">Syeda Zuwaina</a>
-    <div class="hidden gap-7 text-slate-400 sm:flex">
-      <a class="hover:text-white transition-colors" href="#projects">Projects</a>
-      <a class="hover:text-white transition-colors" href="#journey">Journey</a>
-      <a class="hover:text-white transition-colors" href="#skills">Skills</a>
-      <a class="hover:text-white transition-colors" href="#contact">Contact</a>
+    <div class="hidden gap-6 text-slate-400 sm:flex">
+      <a class="hover:text-white" href="#biosync">BioSync</a>
+      <a class="hover:text-white" href="#thyrohour">ThyroHour</a>
+      <a class="hover:text-white" href="#process">Process</a>
+      <a class="hover:text-white" href="#experience">Experience</a>
+      <a class="hover:text-white" href="#contact">Contact</a>
     </div>
   </nav>
 </header>
@@ -55,115 +64,183 @@ tailwind.config = {
 
 <!-- HERO -->
 <section class="glow">
-  <div class="mx-auto max-w-5xl px-6 pb-24 pt-20 sm:pt-28">
-    <p class="rise font-mono text-sm text-accent">Technical AI Product Manager | Ex-Infosys Systems Engineer</p>
-    <h1 class="rise rise-2 mt-5 font-display text-6xl leading-[1.02] text-white sm:text-8xl">Syeda Zuwaina</h1>
-    <p class="rise rise-2 mt-6 max-w-2xl font-display text-3xl italic text-slate-200 sm:text-4xl">“Technology with empathy. Products with purpose.”</p>
-    <p class="rise rise-3 mt-8 max-w-2xl text-lg text-slate-400">I combine technical engineering rigor with deep human empathy to turn real-world friction into shipped, evidence-backed software products. Thoughtful, curious, and practical—capable of bridging multi-model AI architectures with human-centric design.</p>
-    <div class="rise rise-3 mt-10 flex flex-wrap gap-3">
-      <a href="resume.pdf" download class="rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-ink transition hover:bg-teal-300">Download Resume PDF</a>
-      <a href="https://github.com/SyedaZuwaina" target="_blank" rel="noopener" class="rounded-lg border border-line px-5 py-3 text-sm font-medium text-white transition hover:border-accent hover:text-accent">View GitHub Profile</a>
-      <a href="https://www.linkedin.com/in/syeda-zuwaina-21b818203/" target="_blank" rel="noopener" class="rounded-lg border border-line px-5 py-3 text-sm font-medium text-white transition hover:border-accent hover:text-accent">Connect on LinkedIn</a>
+  <div class="mx-auto max-w-5xl px-6 pb-20 pt-16 sm:pt-24">
+    <p class="font-mono text-sm text-accent">Technical AI Product Manager</p>
+    <h1 class="mt-4 font-display text-6xl leading-[1.02] text-white sm:text-8xl">Syeda Zuwaina</h1>
+    <p class="mt-5 max-w-2xl font-display text-3xl italic text-slate-200 sm:text-4xl">“Technology with empathy. Products with purpose.”</p>
+    <p class="mt-7 max-w-2xl text-lg text-slate-300">Ex-Infosys engineer turned 0 → 1 AI Product Manager. I translate messy human health friction into deterministic, safety-first AI products—from user discovery (N = 23) to live production.</p>
+
+    <ul class="mt-8 grid max-w-2xl grid-cols-3 gap-3 text-sm">
+      <li class="card !p-4"><div class="stat">2</div><div class="mt-1 text-slate-400">live products, with case studies</div></li>
+      <li class="card !p-4"><div class="stat">27</div><div class="mt-1 text-slate-400">red flags caught before the LLM runs</div></li>
+      <li class="card !p-4"><div class="stat">N=23</div><div class="mt-1 text-slate-400">exploratory discovery survey</div></li>
+    </ul>
+
+    <div class="mt-9 flex flex-wrap gap-3">
+      <a class="btn p" href="resume.pdf" download>Download Resume PDF</a>
+      <a class="btn" href="https://github.com/SyedaZuwaina" target="_blank" rel="noopener">View GitHub Profile</a>
+      <a class="btn" href="https://www.linkedin.com/in/syeda-zuwaina-21b818203/" target="_blank" rel="noopener">Connect on LinkedIn</a>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="border-t border-line/70">
-  <div class="mx-auto max-w-5xl px-6 py-24">
-    <h2 class="font-display text-4xl text-white sm:text-5xl">Featured projects</h2>
-    <p class="mt-3 max-w-xl text-slate-400">Two live products, each with a written case study covering the research, decisions, and guardrails behind it.</p>
+<!-- PROJECT A: BIOSYNC -->
+<section id="biosync" class="border-t border-line/70">
+  <div class="mx-auto max-w-5xl px-6 py-20">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h2 class="font-display text-5xl text-white">BioSync</h2>
+        <div class="mt-3 flex flex-wrap gap-2"><span class="tag">Live</span><span class="tag">Groq · openai/gpt-oss-20b</span><span class="tag">FastAPI + React</span><span class="tag">Render</span></div>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a class="btn p" href="https://biosync-frontend-8smv.onrender.com/" target="_blank" rel="noopener">Try Live App</a>
+        <a class="btn" href="https://app.notion.com/p/BioSync-Case-Study-6175669989624d3b8e5558c2f6f66137" target="_blank" rel="noopener">Read Notion Case Study</a>
+      </div>
+    </div>
 
-    <div class="mt-12 grid gap-8 lg:grid-cols-2">
+    <div class="mod !mt-8">
+      <div class="lbl">The hook</div>
+      <p class="font-display text-3xl leading-snug text-slate-100">An explainable AI meal decision engine that translates Western nutrition and Traditional Chinese Medicine (TCM) energetics into safe, pantry-staple recipes during acute physical discomfort.</p>
+    </div>
 
-      <!-- BioSync -->
-      <article class="flex flex-col rounded-2xl border border-line bg-panel p-7 transition-colors hover:border-accent/60">
-        <h3 class="font-display text-3xl text-white">BioSync</h3>
-        <p class="mt-1 text-accent">AI-Powered Nutritional Decision Engine</p>
+    <div class="mod">
+      <div class="lbl">The problem triad</div>
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="card"><h3 class="font-display text-2xl text-white">The frustrating moment</h3>
+          <p class="mt-3 text-[15px] text-slate-400">Bloated, sluggish, or chilled, staring at the kitchen with no mental energy to read conflicting wellness blogs or count macros.</p>
+          <p class="mt-4"><span class="stat">47.8%</span> <span class="small">default to “whatever is easiest” (11/23)</span></p></div>
+        <div class="card"><h3 class="font-display text-2xl text-white">Why it’s hard</h3>
+          <p class="mt-3 text-[15px] text-slate-400">Unwell users run on low-bandwidth “System 1” thinking. LLMs can also ignore thermal contraindications, like suggesting warming ginger to an overheated user. In my testing, one did.</p>
+          <p class="mt-4"><span class="stat">34.8%</span> <span class="small">are skeptical of AI meal advice (8/23)</span></p></div>
+        <div class="card"><h3 class="font-display text-2xl text-white">Who it’s for</h3>
+          <p class="mt-3 text-[15px] text-slate-400">Everyday adults with recurring mild discomfort who want a safe, explained meal in under 10 seconds, using groceries they already own.</p>
+          <p class="mt-4"><span class="stat">65.2%</span> <span class="small">have symptoms a few times a week or more (15/23)</span></p></div>
+      </div>
+    </div>
 
-        <!-- request path diagram -->
-        <figure class="mt-6 rounded-xl border border-line bg-ink/60 p-4" aria-label="BioSync request path: user input passes the Bouncer safety scanner, then Groq, with Gemini as fallback">
-          <div class="flex flex-wrap items-center gap-2 font-mono text-xs">
-            <span class="rounded border border-line px-2 py-1 text-slate-300">User input</span>
-            <span class="text-slate-600">›</span>
-            <span class="rounded border border-accent/60 bg-accent/10 px-2 py-1 text-accent">The Bouncer · 0ms LLM cost</span>
-            <span class="text-slate-600">›</span>
-            <span class="rounded border border-line px-2 py-1 text-slate-300">Groq</span>
-            <span class="text-slate-600">›</span>
-            <span class="rounded border border-dashed border-line px-2 py-1 text-slate-400">Gemini fallback</span>
-          </div>
-        </figure>
+    <div class="mod">
+      <div class="lbl">Competitor landscape and the gap</div>
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">MyFitnessPal / macro trackers</h3><p class="small mt-1">Great at long-term calorie logging.</p>
+          <p class="gap"><b>The gap:</b> adds cognitive stress when you feel unwell. 91.3% say macro counting is irrelevant or stressful then (21/23).</p></div>
+        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">Google Search / wellness blogs</h3><p class="small mt-1">Comprehensive information.</p>
+          <p class="gap"><b>The gap:</b> high reading friction and contradictory advice, with no real-time body context.</p></div>
+        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">Generic ChatGPT prompts</h3><p class="small mt-1">Fast conversational answers.</p>
+          <p class="gap"><b>The gap:</b> black-box “trust me” output with no deterministic guardrails or ingredient boundaries by default.</p></div>
+      </div>
+    </div>
 
-        <p class="mt-6 flex-1 text-[15px] text-slate-400">Built a live decision engine using a multi-model pipeline—Groq API (llama-3.1-8b-instant) for ultra-low latency and Google Gemini (gemini-1.5-flash) for structured JSON schema fallback. Engineered a deterministic Python-level safety scanner (“The Bouncer”) to intercept medical red flags at 0ms LLM cost. Authored comprehensive PRD, user flow maps, hypothesis validation matrix (N=23), and safety guardrails matrix in Notion AI.</p>
+    <div class="mod">
+      <div class="lbl">The core product insight</div>
+      <p class="insight">Decouple safety from AI generation. Use deterministic Python rules to block red flags and contraindications <em>before</em> the LLM ever sees the prompt, then use AI strictly for constrained synthesis and plain-English explanation.</p>
+    </div>
 
-        <ul class="mt-6 flex flex-wrap gap-2 text-xs">
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">Groq API</li>
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">Gemini API</li>
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">FastAPI</li>
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">Python</li>
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">React</li>
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">TypeScript</li>
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">Render</li>
-        </ul>
-        <div class="mt-7 flex flex-wrap gap-3 text-sm">
-          <a href="https://biosync-frontend-8smv.onrender.com/" target="_blank" rel="noopener" class="rounded-lg bg-accent px-4 py-2.5 font-semibold text-ink transition hover:bg-teal-300">Try Live App</a>
-          <a href="https://app.notion.com/p/BioSync-Case-Study-6175669989624d3b8e5558c2f6f66137" target="_blank" rel="noopener" class="rounded-lg border border-line px-4 py-2.5 font-medium text-white transition hover:border-accent hover:text-accent">Read Notion Case Study</a>
-        </div>
-      </article>
-
-      <!-- ThyroHour -->
-      <article class="flex flex-col rounded-2xl border border-line bg-panel p-7 transition-colors hover:border-accent/60">
-        <h3 class="font-display text-3xl text-white">ThyroHour</h3>
-        <p class="mt-1 text-accent">Empathy-First Chronic Care Micro-Product</p>
-
-        <!-- state diagram -->
-        <figure class="mt-6 rounded-xl border border-line bg-ink/60 p-4" aria-label="ThyroHour three states: ready, fasting for 60 minutes, done">
-          <div class="flex flex-wrap items-center gap-2 font-mono text-xs">
-            <span class="rounded border border-line px-2 py-1 text-slate-300">Ready</span>
-            <span class="text-slate-600">› 1 tap ›</span>
-            <span class="rounded border border-accent/60 bg-accent/10 px-2 py-1 text-accent">Fasting 60:00</span>
-            <span class="text-slate-600">›</span>
-            <span class="rounded border border-line px-2 py-1 text-slate-300">Done, logged</span>
-          </div>
-        </figure>
-
-        <p class="mt-6 flex-1 text-[15px] text-slate-400">Designed a zero-input, 1-tap mobile web launcher that automates the strict 60-minute Levothyroxine fasting timer instantly upon waking. Features a deterministic 3-state architecture, browser auto-healing guardrails, and an automated clinical log (/logs) for tracking adherence trends over time. Prioritizes 100% client-side data privacy with zero login walls.</p>
-
-        <ul class="mt-6 flex flex-wrap gap-2 text-xs">
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">Next.js</li>
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">React</li>
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">Tailwind CSS</li>
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">localStorage</li>
-          <li class="rounded-full bg-accent/10 px-3 py-1 text-accent">Vercel</li>
-        </ul>
-        <div class="mt-7 flex flex-wrap gap-3 text-sm">
-          <a href="https://thyrohour.vercel.app/" target="_blank" rel="noopener" class="rounded-lg bg-accent px-4 py-2.5 font-semibold text-ink transition hover:bg-teal-300">Try Live App</a>
-          <a href="https://app.notion.com/p/ThyroHour-Case-Study-4033ae694a3e80f0a9cbcbf7d75e86cb" target="_blank" rel="noopener" class="rounded-lg border border-line px-4 py-2.5 font-medium text-white transition hover:border-accent hover:text-accent">Read Notion Case Study</a>
-        </div>
-      </article>
-
+    <div class="mod">
+      <div class="lbl">The solution and interaction flow</div>
+      <div class="flow">
+        <div class="card step"><div class="font-mono text-xs text-slate-500">Step 1</div><h3 class="mt-1 font-display text-2xl text-white">1-tap somatic input</h3>
+          <p class="mt-2 text-[15px] text-slate-400">Tap a symptom plus thermal state (Chilly / Neutral / Warm) in under 10 seconds.</p></div>
+        <div class="card step"><div class="font-mono text-xs text-slate-500">Step 2</div><h3 class="mt-1 font-display text-2xl text-white">Deterministic shield</h3>
+          <p class="mt-2 text-[15px] text-slate-400">Python regex intercepts 27 emergency red flags (0 ms LLM compute), then hard-filters thermal contraindications from a 12-staple pantry RAG (<code>knowledge_base.json</code>).</p></div>
+        <div class="card step"><div class="font-mono text-xs text-slate-500">Step 3</div><h3 class="mt-1 font-display text-2xl text-white">Dual-framework XAI card</h3>
+          <p class="mt-2 text-[15px] text-slate-400">Groq (<code>openai/gpt-oss-20b</code>) writes a 10-minute recipe with side-by-side Western + TCM rationales. If it fails, a zero-LLM fallback (<code>build_local_fallback_recipe()</code>) serves a safe recipe.</p></div>
+      </div>
+      <p class="small mt-5">Known limits, stated up front: red-flag matching is keyword-based (paraphrase recall is a pilot task), dosage caps are not yet verified in code after generation, and TCR / CSAT are target KPIs awaiting a pilot cohort.</p>
     </div>
   </div>
 </section>
 
-<!-- JOURNEY -->
-<section id="journey" class="border-t border-line/70">
-  <div class="mx-auto max-w-5xl px-6 py-24">
+<!-- PROJECT B: THYROHOUR -->
+<section id="thyrohour" class="border-t border-line/70">
+  <div class="mx-auto max-w-5xl px-6 py-20">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h2 class="font-display text-5xl text-white">ThyroHour</h2>
+        <div class="mt-3 flex flex-wrap gap-2"><span class="tag">Live</span><span class="tag">Next.js + React</span><span class="tag">Tailwind</span><span class="tag">Web Audio API</span><span class="tag">localStorage</span><span class="tag">Vercel</span></div>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a class="btn p" href="https://thyrohour.vercel.app/" target="_blank" rel="noopener">Try Live App</a>
+        <a class="btn" href="https://app.notion.com/p/ThyroHour-Case-Study-4033ae694a3e80f0a9cbcbf7d75e86cb" target="_blank" rel="noopener">Read Notion Case Study</a>
+      </div>
+    </div>
+
+    <div class="mod !mt-8">
+      <div class="lbl">The hook</div>
+      <p class="font-display text-3xl leading-snug text-slate-100">A zero-input morning fasting timer and clinical adherence ledger built for hypothyroidism patients taking Levothyroxine.</p>
+    </div>
+
+    <div class="mod">
+      <div class="lbl">The problem triad</div>
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="card"><h3 class="font-display text-2xl text-white">The frustrating moment</h3>
+          <p class="mt-3 text-[15px] text-slate-400">Heavy morning brain fog. You swallow your thyroid pill and can’t remember whether it was 6:15 or 6:35, so you break the 60-minute fast early with coffee, or skip tracking altogether.</p></div>
+        <div class="card"><h3 class="font-display text-2xl text-white">Why it’s hard</h3>
+          <p class="mt-3 text-[15px] text-slate-400">Fog kills multi-step onboarding. Meanwhile, eating too soon can reduce Levothyroxine absorption, and a missed window is one possible cause of stalled lab results that nobody is tracking.</p></div>
+        <div class="card"><h3 class="font-display text-2xl text-white">Who it’s for</h3>
+          <p class="mt-3 text-[15px] text-slate-400">People with hypothyroidism, built from my own lived N = 1 experience, who need a clear line between pill drop, coffee, and the 4-hour calcium/iron gap.</p>
+          <p class="small mt-4">Honest status: no formal user research yet. Interviews are the next step.</p></div>
+      </div>
+    </div>
+
+    <div class="mod">
+      <div class="lbl">Competitor landscape and the gap</div>
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">Apple / Android clock alarms</h3><p class="small mt-1">Reliable countdown.</p>
+          <p class="gap"><b>The gap:</b> no clinical context, no 4-hour supplement reminder, and zero adherence history for doctor visits.</p></div>
+        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">Medisafe / pill reminder apps</h3><p class="small mt-1">Strong multi-medication scheduling.</p>
+          <p class="gap"><b>The gap:</b> built for “Did you take it?”, not “How long until I can eat?”, and heavier than a one-tap launcher.</p></div>
+        <div class="card"><div class="shot">screenshot slot</div><h3 class="font-medium text-white">Paper / notes-app logs</h3><p class="small mt-1">Flexible journaling.</p>
+          <p class="gap"><b>The gap:</b> too much friction when half asleep, so tracking is abandoned before the endocrinology appointment.</p></div>
+      </div>
+    </div>
+
+    <div class="mod">
+      <div class="lbl">The core product insight</div>
+      <p class="insight">Remove every decision when cognitive bandwidth is lowest. One giant tap starts the isolation window; a distinct 3-state color shift (Amber → Red → Green) and a 00:00 audio chime remove clock-watching anxiety.</p>
+    </div>
+
+    <div class="mod">
+      <div class="lbl">The solution and state diagram</div>
+      <div class="flow">
+        <div class="card" style="border-top:3px solid #f59e0b"><div class="font-mono text-xs text-amber-400">State 1 · IDLE · Amber</div><h3 class="mt-1 font-display text-2xl text-white">One tap, no login</h3>
+          <p class="mt-2 text-[15px] text-slate-400">A zero-login “Pill Dropped” launcher. The tap also unlocks browser audio for later.</p></div>
+        <div class="card" style="border-top:3px solid #ef4444"><div class="font-mono text-xs text-red-400">State 2 · COUNTING · Red</div><h3 class="mt-1 font-display text-2xl text-white">Timestamp-synced countdown</h3>
+          <p class="mt-2 text-[15px] text-slate-400">A 60-minute timer that survives refreshes, with warning cards: no caffeine or food (1h), no calcium/iron (4h).</p></div>
+        <div class="card" style="border-top:3px solid #10b981"><div class="font-mono text-xs text-emerald-400">State 3 · COMPLETED · Green</div><h3 class="mt-1 font-display text-2xl text-white">Chime, then a quick log</h3>
+          <p class="mt-2 text-[15px] text-slate-400">A 00:00 Web Audio API chime, a 1-tap self-reported adherence toggle, and a brain-fog rating logged locally to <code>/logs</code> for doctor reviews.</p></div>
+      </div>
+      <p class="small mt-5">Known limits: adherence is self-reported, alerts work only while the tab is open, and cancelled fasts aren’t logged yet. I found and fixed an always-100% adherence bug in my own audit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS STRIP -->
+<section id="process" class="border-t border-line/70">
+  <div class="mx-auto max-w-5xl px-6 py-20">
+    <h2 class="font-display text-4xl text-white sm:text-5xl">How I built &amp; shipped these 0 → 1</h2>
+    <div class="tl mt-10">
+      <div class="card"><div class="font-mono text-xs text-accent">1</div><h3 class="mt-1 font-medium text-white">Lived friction &amp; discovery</h3><p class="small mt-2">N = 1 empathy plus an N = 23 structured survey.</p></div>
+      <div class="card"><div class="font-mono text-xs text-accent">2</div><h3 class="mt-1 font-medium text-white">Guardrail-first architecture</h3><p class="small mt-2">Deterministic Python safety designed before the prompts.</p></div>
+      <div class="card"><div class="font-mono text-xs text-accent">3</div><h3 class="mt-1 font-medium text-white">AI-assisted full-stack execution</h3><p class="small mt-2">Shipping Next.js, React, FastAPI and Render SSR.</p></div>
+      <div class="card"><div class="font-mono text-xs text-accent">4</div><h3 class="mt-1 font-medium text-white">Red-teaming &amp; iteration</h3><p class="small mt-2">Fixing model deprecations, adherence edge cases, and latency.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="border-t border-line/70">
+  <div class="mx-auto max-w-5xl px-6 py-20">
     <h2 class="font-display text-4xl text-white sm:text-5xl">Career journey: engineering foundation</h2>
-
-    <div class="relative mt-12 border-l border-line pl-8">
+    <div class="relative mt-10 border-l border-line pl-8">
       <span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-accent"></span>
       <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-        <div>
-          <h3 class="font-display text-3xl text-white">Infosys Limited</h3>
-          <p class="text-accent">Systems Engineer, Finacle Product Team</p>
-        </div>
+        <div><h3 class="font-display text-3xl text-white">Infosys Limited</h3><p class="text-accent">Systems Engineer, Finacle Product Team</p></div>
         <p class="font-mono text-sm text-slate-500">Jul 2022 – Nov 2024 | Bangalore, India</p>
       </div>
-      <ul class="mt-6 max-w-3xl space-y-4 text-slate-400">
-        <li class="flex gap-3"><span class="mt-2.5 h-1 w-1 shrink-0 rounded-full bg-accent"></span><span>Managed containerized deployment orchestration (Docker, Kubernetes) for Zenpay (Zenith Bank, Nigeria), maintaining system stability and uninterrupted transaction workflows.</span></li>
-        <li class="flex gap-3"><span class="mt-2.5 h-1 w-1 shrink-0 rounded-full bg-accent"></span><span>Conducted user discovery with L1/L2 support teams to isolate diagnostic bottlenecks; designed and launched Python/Linux automation tools (Process Termination Tool &amp; Matplotlib Data Visualization Framework).</span></li>
-        <li class="flex gap-3"><span class="mt-2.5 h-1 w-1 shrink-0 rounded-full bg-accent"></span><span>Presented technical software tool proposals to executive department leaders, driving internal adoption across support units.</span></li>
+      <ul class="mt-6 max-w-3xl space-y-3 text-slate-400">
+        <li>Managed containerized deployment orchestration (Docker, Kubernetes) for Zenpay (Zenith Bank, Nigeria), maintaining system stability and uninterrupted transaction workflows.</li>
+        <li>Conducted user discovery with L1/L2 support teams to isolate diagnostic bottlenecks; designed and launched Python/Linux automation tools (Process Termination Tool &amp; Matplotlib Data Visualization Framework).</li>
+        <li>Presented technical software tool proposals to executive department leaders, driving internal adoption across support units.</li>
       </ul>
     </div>
   </div>
@@ -171,65 +248,32 @@ tailwind.config = {
 
 <!-- SKILLS -->
 <section id="skills" class="border-t border-line/70">
-  <div class="mx-auto max-w-5xl px-6 py-24">
+  <div class="mx-auto max-w-5xl px-6 py-20">
     <h2 class="font-display text-4xl text-white sm:text-5xl">Skills &amp; certifications</h2>
-
-    <div class="mt-12 grid gap-6 md:grid-cols-3">
-      <div class="rounded-2xl border border-line bg-panel p-6">
-        <h3 class="font-display text-2xl text-white">Product &amp; AI capabilities</h3>
-        <ul class="mt-5 flex flex-wrap gap-2 text-sm">
-          <li class="rounded-md border border-line px-2.5 py-1">PRDs</li>
-          <li class="rounded-md border border-line px-2.5 py-1">User Discovery &amp; Persona Mapping</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Hypothesis Validation (N=23)</li>
-          <li class="rounded-md border border-line px-2.5 py-1">AI Guardrails Matrix</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Post-Launch KPIs</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Cost/Latency Optimization</li>
-        </ul>
-      </div>
-      <div class="rounded-2xl border border-line bg-panel p-6">
-        <h3 class="font-display text-2xl text-white">Technical stack</h3>
-        <ul class="mt-5 flex flex-wrap gap-2 text-sm">
-          <li class="rounded-md border border-line px-2.5 py-1">Python</li>
-          <li class="rounded-md border border-line px-2.5 py-1">FastAPI</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Groq API</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Google Gemini API</li>
-          <li class="rounded-md border border-line px-2.5 py-1">React</li>
-          <li class="rounded-md border border-line px-2.5 py-1">TypeScript</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Next.js</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Tailwind CSS</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Docker</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Kubernetes</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Linux</li>
-          <li class="rounded-md border border-line px-2.5 py-1">Git</li>
-        </ul>
-      </div>
-      <div class="rounded-2xl border border-line bg-panel p-6">
-        <h3 class="font-display text-2xl text-white">Curated certifications</h3>
-        <ul class="mt-5 space-y-4 text-sm">
-          <li><span class="text-white">The Fundamentals of Digital Marketing</span><br><span class="text-slate-500">Google Digital Garage</span></li>
-          <li><span class="text-white">Google Analytics &amp; GA4 Certifications</span><br><span class="text-slate-500">Google Skillshop</span></li>
-          <li><span class="text-white">Foundations of Foresight</span><br><span class="text-slate-500">Dubai Future Foundation</span></li>
-        </ul>
-      </div>
+    <div class="mt-10 grid gap-4 md:grid-cols-3">
+      <div class="card"><h3 class="font-display text-2xl text-white">Product &amp; AI capabilities</h3>
+        <p class="small mt-4 !text-slate-300">PRDs · User discovery &amp; persona mapping · Hypothesis validation (N = 23) · AI guardrails matrix · KPI definition · Red-teaming · Cost/latency optimization</p></div>
+      <div class="card"><h3 class="font-display text-2xl text-white">Technical stack</h3>
+        <p class="small mt-4 !text-slate-300">Python · FastAPI · Groq API (gpt-oss-20b) · React · TypeScript · Next.js · Tailwind CSS · Web Audio API · Docker · Kubernetes · Linux · Git</p></div>
+      <div class="card"><h3 class="font-display text-2xl text-white">Curated certifications</h3>
+        <ul class="small mt-4 space-y-2 !text-slate-300">
+          <li>The Fundamentals of Digital Marketing, Google Digital Garage</li>
+          <li>Google Analytics &amp; GA4, Google Skillshop</li>
+          <li>Foundations of Foresight, Dubai Future Foundation</li></ul></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT & CONTACT -->
+<!-- CONTACT -->
 <section id="contact" class="glow border-t border-line/70">
-  <div class="mx-auto max-w-5xl px-6 py-24">
+  <div class="mx-auto max-w-5xl px-6 py-20">
     <h2 class="font-display text-4xl text-white sm:text-5xl">Product philosophy &amp; contact</h2>
-
-    <blockquote class="mt-10 max-w-3xl border-l-2 border-accent pl-6 font-display text-3xl italic leading-snug text-slate-100 sm:text-4xl">
-      “Great products aren’t built by adding complex features—they are built by removing friction for humans at their most vulnerable moments.”
-    </blockquote>
-
-    <p class="mt-10 max-w-2xl text-lg text-slate-400">I operate at the intersection of analytical precision and genuine user empathy. With a background as a Systems Engineer at Infosys, I approach products with a practitioner’s curiosity—reading API documentation, containerizing services, and auditing edge-case logic with the same care I bring to user interviews, PRDs, and safety guardrail matrices.</p>
-
-    <div class="mt-10 flex flex-wrap gap-3 text-sm">
-      <a href="mailto:syedazuwaina05@gmail.com" class="rounded-lg bg-accent px-5 py-3 font-semibold text-ink transition hover:bg-teal-300">Email: syedazuwaina05@gmail.com</a>
-      <a href="https://www.linkedin.com/in/syeda-zuwaina-21b818203/" target="_blank" rel="noopener" class="rounded-lg border border-line px-5 py-3 font-medium text-white transition hover:border-accent hover:text-accent">LinkedIn</a>
-      <a href="https://github.com/SyedaZuwaina" target="_blank" rel="noopener" class="rounded-lg border border-line px-5 py-3 font-medium text-white transition hover:border-accent hover:text-accent">GitHub</a>
+    <blockquote class="insight mt-8 max-w-3xl">“Great products aren’t built by adding complex features—they are built by removing friction for humans at their most vulnerable moments.”</blockquote>
+    <p class="mt-8 max-w-2xl text-lg text-slate-400">I operate at the intersection of analytical precision and genuine user empathy. With a background as a Systems Engineer at Infosys, I approach products with a practitioner’s curiosity—reading API documentation, containerizing services, and auditing edge-case logic with the same care I bring to user interviews, PRDs, and safety guardrail matrices.</p>
+    <div class="mt-9 flex flex-wrap gap-3">
+      <a class="btn p" href="mailto:syedazuwaina05@gmail.com">Email: syedazuwaina05@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/syeda-zuwaina-21b818203/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/SyedaZuwaina" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </section>
@@ -242,7 +286,6 @@ tailwind.config = {
     <p>Technology with empathy. Products with purpose.</p>
   </div>
 </footer>
-
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
